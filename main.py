@@ -9,7 +9,7 @@ from pandas_excel_styler import DataFrameExcelStyler
 # 確認選擇之股票代碼
 with open('stocks.txt','r') as f:
     stocks = f.readlines()
-stocks = [x.strip() for x in stocks]
+stocks = [int(x.strip()) for x in stocks]
 
 # 獲取網頁資料
 session = req.HTMLSession()
@@ -25,10 +25,11 @@ except Exception as e:
     sys.exit(0)
 
 # 取得選定股票
+print(data)
 output_df = pd.DataFrame()
 for stock in stocks:
-    if int(stock) in data['股票代號']:
-        output_df = output_df.append(data[data['股票代號']==int(stock)])
+    if stock in list(data['股票代號']):
+        output_df = output_df.append(data[data['股票代號']==stock])
 output_df.reset_index(drop=True, inplace=True)
 print(tabulate(output_df, headers='keys'))
 
