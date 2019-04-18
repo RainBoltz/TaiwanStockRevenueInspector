@@ -25,7 +25,6 @@ except Exception as e:
     sys.exit(0)
 
 # 取得選定股票
-print(data)
 output_df = pd.DataFrame()
 for stock in stocks:
     if stock in list(data['股票代號']):
