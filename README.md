@@ -11,7 +11,7 @@ pip3 install -r requirements.txt
 - xlwt
 
 ## 使用方法
-1. 將想要觀察的土票代碼寫入 [stocks.txt](https://github.com/RainBoltz/TaiwanStockRevenueInspector/blob/master/stocks.txt) 檔案內
+1. 將想要觀察的股票代碼寫入 [stocks.txt](https://github.com/RainBoltz/TaiwanStockRevenueInspector/blob/master/stocks.txt) 檔案內
 ```
 3008
 2912
