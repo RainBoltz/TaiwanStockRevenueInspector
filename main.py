@@ -7,7 +7,7 @@ from tabulate import tabulate
 from pandas_excel_styler import DataFrameExcelStyler
 
 # 確認選擇之股票代碼
-with open('stocks.txt','r') as f:
+with open('stock.txt', 'r', encoding = 'utf-8-sig') as f:
     stocks = f.readlines()
 stocks = [int(x.strip()) for x in stocks]
 
