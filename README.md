@@ -12,7 +12,7 @@ pip3 install -r requirements.txt
 
 ## 使用方法
 1. 將想要觀察的股票代碼寫入 [stocks.txt](https://github.com/RainBoltz/TaiwanStockRevenueInspector/blob/master/stocks.txt) 檔案內
-> 記得一定要把編碼設為 UTF-8 或者 UTF-8-SIG (有BOM標頭的 UTF-8) !!!
+    > 記得一定要把編碼設為 UTF-8 或者 UTF-8-SIG (有BOM標頭的 UTF-8) !!!
 
 	```
 	3008
@@ -36,7 +36,8 @@ pip3 install -r requirements.txt
 	![example2image](https://github.com/RainBoltz/TaiwanStockRevenueInspector/blob/master/example2.PNG)
 
 5. 設定 N 天的程式碼區段在 [main.py](https://github.com/RainBoltz/TaiwanStockRevenueInspector/blob/master/main.py)：
-```python
-look_back = 10 # 標記出N天內更新的資訊
-```
+    
+    ```python
+    look_back = 10 # 標記出N天內更新的資訊
+    ```
 
